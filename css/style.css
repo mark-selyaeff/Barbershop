@@ -1,9 +1,10 @@
 body {
   font-size: 14px;
   line-height: 24px;
-  color: #fff;
+  color: #000;
   font-weight: normal;
   font-family: "PT Sans Narrow";
+  margin: 0;
 }
 
 h1 {
@@ -15,4 +16,111 @@ h1 {
 header.main-header nav a {
   font-size: 16px;
   line-height: 20px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header.main-header,
+footer.main-footer {
+  background-color: black;
+}
+
+.main-navigation {
+  background-color: green;
+  float: left;
+  width: 700px;
+  min-height: 70px;
+}
+
+div.login {
+  background-color: red;
+  min-height: 70px;
+  width: 140px;
+  margin-left: 100px;
+  float: right;
+}
+
+main {
+  background-color: pink;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+main form {
+  outline: 1px solid black;
+  float: left;
+  min-height: 570px;
+  width: 220px;
+}
+
+.items-list-block {
+  background-color: green;
+  float: right;
+  width: 700px;
+  min-height: 595px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.items-list-block ul li {
+  float: left;
+}
+
+.items-list-block .pages-block {
+  clear: both;
+}
+
+footer section {
+        outline: 1px solid black;
+        float: left;
+}
+
+section.contacts {
+  min-height: 190px;
+  width: 320px;
+}
+
+section.social {
+  min-height: 190px;
+  width: 140px;
+  margin-left: 80px;
+}
+
+section.developed-by {
+  min-height: 190px;
+  width: 140px;
+  margin-left: 260px;
+}
+
+/* Начало стилей для catalog-item.html */
+
+section.item-photos {
+  float: left;
+  outline: 1px solid black;
+  width: 460px;
+  min-height: 670px;
+}
+
+.item-photos div {
+  display: inline-block;
+}
+
+section.item-description {
+  outline: 1px solid black;
+  width: 390px;
+  min-height: 505px;
+  float: right;
 }
