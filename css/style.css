@@ -43,7 +43,7 @@ footer.main-footer {
   min-height: 70px;
 }
 
-div.login {
+.login {
   background-color: red;
   min-height: 70px;
   width: 140px;
@@ -84,8 +84,8 @@ main form {
 }
 
 footer section {
-        outline: 1px solid black;
-        float: left;
+  outline: 1px solid black;
+  float: left;
 }
 
 section.contacts {
