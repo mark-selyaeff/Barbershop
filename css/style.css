@@ -103,9 +103,13 @@ header a:hover {
 }
 
 main {
-  background-color: pink;
+  background-color: #f6f3f0;
   padding-top: 60px;
   padding-bottom: 50px;
+}
+
+main .container {
+  background-color: #f6f3f0;
 }
 
 .main-title {
@@ -175,7 +179,7 @@ main form {
 }
 
 .items-list-block {
-  background-color: green;
+  outline: 1px solid black;
   float: right;
   width: 700px;
   min-height: 595px;
@@ -184,12 +188,93 @@ main form {
   margin: 0px;
 }
 
-.items-list-block ul li {
-  float: left;
+.items-list-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
-.items-list-block .pages-block {
+.items-list-block ul li {
+  width: 220px;
+  min-height: 285px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: white;
+}
+
+.items-list-block ul li:not(:nth-child(3n)) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.pages-block {
   clear: both;
+  outline: 1px solid black;
+  font-size: 0;
+}
+
+.pages-block a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  outline: 1px solid black;
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-right: 7px;
+}
+
+.pages-block a:hover {
+  background-color: white;
+  color: black;
+}
+
+.item-name {
+  margin: 10px;
+}
+
+.item-block a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-price {
+  outline: 1px solid black;
+  display: inline-block;
+  height: 45px;
+  width: 110px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: top;
+  padding: 15px 0;
+  margin-left: 10px;
+}
+
+a.buy {
+  outline: 1px solid black;
+  width: 80px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+a.buy:hover {
+  background-color: white;
+  color: black;
 }
 
 footer section {
@@ -200,12 +285,29 @@ footer section {
 section.contacts {
   min-height: 190px;
   width: 320px;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 34px;
+}
+
+a.find-us {
+  color: black;
+}
+
+a.find-us:hover {
+  text-decoration: none;
+}
+
+a.tel {
+  text-decoration: none;
+  color: black;
 }
 
 section.social {
   min-height: 190px;
   width: 140px;
   margin-left: 80px;
+
 }
 
 section.developed-by {
