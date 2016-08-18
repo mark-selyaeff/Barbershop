@@ -129,6 +129,60 @@ main form {
   width: 220px;
 }
 
+form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.producers label {
+  display: block;
+  padding-left: 45px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 25px; 
+  position: relative;
+  cursor: pointer;
+}
+
+.producers .checkbox-indicator {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  left: 0;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator::before,
+input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  top: 7px;
+  left: 0px;
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
 .breadcrumbs ul {
   list-style: none;
   padding: 0;
