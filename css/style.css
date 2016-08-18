@@ -46,21 +46,21 @@ header .container {
   list-style: none;
   padding: 0;
   margin: 0;
-  outline: 1px solid white;
   min-height: 70px;
   font-size: 0;
 }
 
 .main-navigation ul li {
   display: inline-block;
-  outline: 1px solid white;
   vertical-align: top;
   font-size: 16px;
+  min-height: 70px;
 }
 
 .main-navigation ul a {
   display: block;
-  padding: 25px 20px;
+  padding: 20px 20px;
+  padding-top: 20px;
   line-height: 20px;
   text-decoration: none;
   color: white;
@@ -74,10 +74,6 @@ header a:hover {
   min-height: 70px;
   width: 100px;
   float: right;
-}
-
-.login > * {
-  outline: 1px solid yellow;
 }
 
 .login a {
