@@ -5,12 +5,14 @@ body {
   font-weight: bold;
   font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
+  min-width: 960px;
 }
 
 h1 {
   font-size: 30px;
   line-height: 42px;
   font-weight: bold;
+  margin: 0;
 }
 
 .container {
@@ -34,7 +36,6 @@ footer.main-footer {
 .main-navigation {
   background-color: black;
   float: left;
-  width: 700px;
   min-height: 70px;
 }
 
@@ -46,21 +47,28 @@ header .container {
   list-style: none;
   padding: 0;
   margin: 0;
-  min-height: 70px;
   font-size: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .main-navigation ul li {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
-  min-height: 70px;
+}
+
+.main-navigation > a {
+  display: inline-block;
+  vertical-align: top;
+  height: 48px;
+  padding: 0 20px;
+  padding-top: 22px;
 }
 
 .main-navigation ul a {
   display: block;
-  padding: 20px 20px;
-  padding-top: 20px;
+  padding: 25px 20px;
   line-height: 20px;
   text-decoration: none;
   color: white;
@@ -72,8 +80,9 @@ header a:hover {
 
 .login {
   min-height: 70px;
-  width: 100px;
+  width: 105px;
   float: right;
+  outline: 1px solid yellow;
 }
 
 .login a {
@@ -93,23 +102,24 @@ header a:hover {
   position: absolute;
   width: 18px;
   height: 18px;
-  background-color: red;
+  background-color: white;
   left: 20px;
   top: 28px;
 }
 
 main {
-  background-color: #f6f3f0;
-  padding-top: 60px;
+  background-image: url("../img/background.png");
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 
 main .container {
-  background-color: #f6f3f0;
+  background-image: inherit;
+  padding-top: 50px;
 }
 
 .main-title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 main form {
@@ -123,8 +133,7 @@ main form {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
-  outline: 1px solid black;
+  margin-bottom: 55px;
   font-size: 0;
 }
 
@@ -133,8 +142,6 @@ main form {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
-  outline: 1px solid black;
-
   line-height: 20px;
 }
 
@@ -154,7 +161,7 @@ main form {
   border-bottom-color: transparent;
   position: absolute;
   right: 20px;
-  top: 5px;
+  top: 4px;
 }
 
 .breadcrumbs li:not(:last-child) a::after {
@@ -166,7 +173,7 @@ main form {
   border-top-color: transparent;
   border-bottom-color: transparent;
   position: absolute;
-  top: 5px;
+  top: 4px;
   right: 15px;
 }
 
