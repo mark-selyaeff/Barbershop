@@ -141,14 +141,14 @@ legend {
   line-height: 30px;
 }
 
-.producers label {
+.producers label,
+.items-groups label {
   display: block;
   padding-left: 45px;
   font-size: 14px;
   line-height: 18px;
   padding-bottom: 25px; 
   position: relative;
-  cursor: pointer;
 }
 
 .producers .checkbox-indicator {
@@ -160,7 +160,8 @@ legend {
   left: 0;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"],
+input[type="radio"] {
   display: none;
 }
 
