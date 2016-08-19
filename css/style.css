@@ -160,8 +160,7 @@ legend {
   left: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -183,6 +182,8 @@ input[type="checkbox"]:checked + .checkbox-indicator::before {
 input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
 }
+
+.item-groups 
 
 .breadcrumbs ul {
   list-style: none;
