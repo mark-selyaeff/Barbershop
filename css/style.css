@@ -261,6 +261,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
   font-size: 14px;
   line-height: 18px;
   background-color: white;
+  position: relative;
 }
 
 .items-list-block ul li:not(:nth-child(3n)) {
@@ -268,13 +269,13 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
   margin-bottom: 20px;
 }
 
-.pages-block {
+.pagination {
   clear: both;
   outline: 1px solid black;
   font-size: 0;
 }
 
-.pages-block a {
+.pagination .page-number {
   display: inline-block;
   font-size: 14px;
   line-height: 18px;
@@ -291,22 +292,26 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
   margin-right: 7px;
 }
 
-.pages-block a:hover {
+.pagination .active {
   background-color: white;
   color: black;
+}
+
+.pagination a:hover {
+  background-color: #663d15;
+  color: white;
 }
 
 .item-name {
   margin: 10px;
 }
 
-.item-block a {
+.item-block a:first-child {
   text-decoration: none;
   color: black;
 }
 
 .item-price {
-  outline: 1px solid black;
   display: inline-block;
   height: 45px;
   width: 110px;
@@ -315,10 +320,11 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
   vertical-align: top;
   padding: 15px 0;
   margin-left: 10px;
+  font-size: 14px;
+  background-color: #e5e5e5;
 }
 
-a.buy {
-  outline: 1px solid black;
+.buy {
   width: 80px;
   height: 45px;
   display: inline-block;
@@ -328,11 +334,18 @@ a.buy {
   text-align: center;
   padding: 15px 0;
   box-sizing: border-box;
+  font-size: 14px;
+  text-decoration: none;
 }
 
-a.buy:hover {
-  background-color: white;
-  color: black;
+.buy:hover {
+  background-color: #663d15;
+}
+
+.price-block {
+  font-size: 0;
+  position: absolute;
+  bottom: 14px;
 }
 
 footer section {
