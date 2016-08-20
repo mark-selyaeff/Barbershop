@@ -24,7 +24,7 @@
           <li>
             <a href="#">Прайс-лист</a></li>
           <li>
-            <a href="#">Магазин</a></li>
+            <a href="#" class="active">Магазин</a></li>
           <li>
             <a href="#">Контакты</a></li>
         </ul>
@@ -49,7 +49,7 @@
         </ul>
       </section>
 
-      <form name="filters">
+      <form name="filters" class="filters">
         <fieldset class="producers">
           <legend>Производители:</legend>
           <label>
@@ -71,11 +71,11 @@
         </fieldset>
         <fieldset class="items-groups">
           <legend>Группы товаров:</legend>
-          <input type="radio" name="shaving-set">
+          <input type="radio" id="shaving-set">
           <label for="shaving-set">Бритвенные принадлежности</label>
-          <input type="radio" name="maintenance-set" checked>
+          <input type="radio" id="maintenance-set" checked>
           <label for="maintenance-set">Средства для ухода</label>
-          <input type="radio" name="accessory-set">
+          <input type="radio" id="accessory-set">
           <label for="accessory-set">Аксессуары</label>
         </fieldset>
         <button>Показать</button>
@@ -162,7 +162,7 @@
 
       <section class="developed-by">
         <p>Разработано:</p>
-        <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+        <a href="http://htmlacademy.ru" class="academy">htmlacademy.ru</a>
       </section>
 
     </div>
