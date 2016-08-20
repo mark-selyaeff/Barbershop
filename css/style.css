@@ -526,10 +526,52 @@ section.item-photos {
   display: inline-block;
 }
 
-section.item-description {
+.item-description {
   width: 390px;
   min-height: 505px;
   float: right;
+  position: relative;
+  font-size: 0;
 }
 
+.item-description > * {
+  font-size: 14px;
+  line-height: 24px;
+}
 
+.article-id {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.long-description {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.item-stuff {
+  margin-top: 65px;
+}
+
+.item-stuff ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.item-stuff li {
+  position: relative;
+}
+
+.item-stuff li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  left: -20px;
+  transform: rotate(45deg);
+  top: 7px;
+}
