@@ -398,6 +398,11 @@ input[type="radio"]:checked + label::after {
   bottom: 14px;
 }
 
+.buy-block {
+  position: relative;
+  left: -10px;
+}
+
 .main-footer {
   background-image: url("../img/footer-bg.png");
   box-shadow: inset 1px 35px 38px -9px rgba(0,0,0,0.75);
@@ -526,6 +531,10 @@ section.item-photos {
   display: inline-block;
 }
 
+.item-photo:nth-child(3) {
+  margin: 0 30px;
+}
+
 .item-description {
   width: 390px;
   min-height: 505px;
@@ -571,7 +580,13 @@ section.item-photos {
   height: 7px;
   background-color: black;
   position: absolute;
-  left: -20px;
+  left: -17px;
   transform: rotate(45deg);
   top: 7px;
 }
+
+.whats-in {
+  font-size: 24px;
+  line-height: 30px;
+}
+
